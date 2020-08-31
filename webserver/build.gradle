@@ -1,0 +1,9 @@
+plugins {
+  id 'io.quarkus'
+}
+
+dependencies {
+  compile project(':common')
+  implementation "io.quarkus:quarkus-resteasy:${quarkusVersion}"
+  testImplementation project(':common').sourceSets.test.output
+}

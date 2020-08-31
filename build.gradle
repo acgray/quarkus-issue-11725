@@ -1,0 +1,23 @@
+plugins {
+  id 'java'
+}
+
+ext {
+  quarkusVersion = "1.7.1.Final"
+}
+
+
+subprojects {
+  apply plugin: 'java'
+
+  repositories {
+      mavenLocal()
+      maven {
+	  url = uri('https://repo.maven.apache.org/maven2')
+      }
+  }
+
+
+}
+
+
